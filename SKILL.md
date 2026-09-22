@@ -15,14 +15,16 @@ If key inputs are absent, make the smallest useful assumption and mark it. Ask a
 
 For the workshop sequence and reusable prompt patterns, read [the methodology reference](references/methodology.md).
 
+When the user wants to run a stage, asks for the exact workshop wording, or needs to choose a prompt, read [the full prompt library](references/full-prompts.md). Copy the matching Russian template without silently shortening its constraints. Read [the case walkthrough](references/case-walkthrough.md) only when an applied example would help; it is illustrative evidence, not a source of new product facts.
+
 ## Workflow
 
-1. **Segment and choose a priority.** Generate plausible JTBD segments, describe the situation and desired progress, then rank them by market size, customer value, profitability, and scalability. Select a primary segment and state why.
-2. **Design the offer.** Link the primary segment's job, a concrete obstacle, and a specific product mechanism. Produce three offer directions. If the product does not credibly address the obstacle, say so instead of forcing an offer.
-3. **Write the landing-page logic.** Build the page around motivation, ability to act, and a trigger. Every block should answer a user question or remove a concrete uncertainty; avoid generic claims such as “the best solution.”
-4. **Create the landing-page draft.** Produce final copy first. Build HTML only when the user asks for a page or code. Keep placeholder media clearly marked and make mobile behaviour a first-class requirement.
-5. **Audit before traffic.** Review category and market cues, first screen, page logic, design, mobile experience, and trust/CTA. Label each finding as **evidence**, **objective observation**, or **hypothesis**. Return one verdict: ready, ready after fixes, or not ready.
-6. **Iterate from the audit.** Apply only findings that improve the stated hypothesis. Preserve the chosen segment and offer unless the audit identifies a specific reason to revisit them.
+1. **Segment and choose a priority — Prompt 1.** Use when the product exists only as an idea or has no defensible primary segment. It creates and ranks JTBD segments; do not use it to validate demand.
+2. **Design the offer — Prompt 2.** Use only after a segment has been selected. It maps existing product mechanisms to the segment’s jobs, barriers, and desired outcomes; it must surface product gaps instead of inventing features.
+3. **Write the landing-page logic — Prompt 3.** Use after an offer direction is chosen. It turns the segment and offer into the full persuasion sequence and final copy blocks.
+4. **Create the landing-page draft — Prompt 4.** Use only after Prompt 3’s copy is approved. It creates a responsive, single-file HTML landing page; it is not a substitute for product or market evidence.
+5. **Audit before traffic — Prompt 5.** Use after a design mock-up or working page exists and the product, audience, and traffic source are known. It separates market evidence, objective UX evidence, and CRO hypotheses.
+6. **Iterate from the audit — Prompt 6.** Use in the same conversation after Prompt 5. Apply only relevant fixes; preserve the selected segment and offer unless the audit supplies a concrete reason to revisit them.
 
 ## Deliverables
 
