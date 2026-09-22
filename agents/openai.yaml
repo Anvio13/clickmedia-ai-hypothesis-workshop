@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clickmedia AI Hypothesis Workshop"
+  short_description: "Turn an idea into a testable landing-page hypothesis"
+  default_prompt: "Use the Clickmedia workflow to turn my idea into a testable landing-page hypothesis."
