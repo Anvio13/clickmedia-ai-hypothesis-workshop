@@ -5,7 +5,7 @@ description: Turn a business idea into a testable landing-page hypothesis using 
 
 # Clickmedia AI Hypothesis Workshop
 
-Guide a user from a raw business idea to a landing page ready for a careful market test. The outcome is a documented hypothesis, not proof that the business will work.
+Guide a user from a raw business idea to a landing page ready for a careful market test. The default full run is **idea → JTBD segments → chosen segment → offer → landing-page copy → responsive HTML → audit**. The outcome is a documented hypothesis and a usable landing-page draft, not proof that the business will work.
 
 ## Start with available context
 
@@ -15,16 +15,17 @@ If key inputs are absent, make the smallest useful assumption and mark it. Ask a
 
 For the workshop sequence and reusable prompt patterns, read [the methodology reference](references/methodology.md).
 
-When the user wants to run a stage, asks for the exact workshop wording, or needs to choose a prompt, read [the full prompt library](references/full-prompts.md). Copy the matching Russian template without silently shortening its constraints. Read [the case walkthrough](references/case-walkthrough.md) only when an applied example would help; it is illustrative evidence, not a source of new product facts.
+When the user wants to run a stage, asks for the exact workshop wording, or needs to choose a prompt, read [the full prompt library](references/full-prompts.md). Copy the matching Russian template without silently shortening its constraints. For the page architecture and its content requirements, read [the landing-page structure](references/landing-page-structure.md). Read [the case walkthrough](references/case-walkthrough.md) only when an applied example would help; it is illustrative evidence, not a source of new product facts.
 
 ## Workflow
 
-1. **Segment and choose a priority — Prompt 1.** Use when the product exists only as an idea or has no defensible primary segment. It creates and ranks JTBD segments; do not use it to validate demand.
-2. **Design the offer — Prompt 2.** Use only after a segment has been selected. It maps existing product mechanisms to the segment’s jobs, barriers, and desired outcomes; it must surface product gaps instead of inventing features.
-3. **Write the landing-page logic — Prompt 3.** Use after an offer direction is chosen. It turns the segment and offer into the full persuasion sequence and final copy blocks.
-4. **Create the landing-page draft — Prompt 4.** Use only after Prompt 3’s copy is approved. It creates a responsive, single-file HTML landing page; it is not a substitute for product or market evidence.
-5. **Audit before traffic — Prompt 5.** Use after a design mock-up or working page exists and the product, audience, and traffic source are known. It separates market evidence, objective UX evidence, and CRO hypotheses.
-6. **Iterate from the audit — Prompt 6.** Use in the same conversation after Prompt 5. Apply only relevant fixes; preserve the selected segment and offer unless the audit supplies a concrete reason to revisit them.
+1. **Turn the idea into an input brief.** Extract the product, confirmed capabilities, constraints, market/region, and what the visitor should do. Mark any missing item as an assumption; never manufacture features or evidence.
+2. **Segment and choose a priority — Prompt 1.** Use when the product exists only as an idea or has no defensible primary segment. It creates and ranks JTBD segments; do not use it to validate demand. Select one primary segment before writing the page.
+3. **Design the offer — Prompt 2.** Use only after a segment has been selected. It maps existing product mechanisms to the segment’s jobs, barriers, and desired outcomes; it must surface product gaps instead of inventing features. Choose one offer direction before continuing.
+4. **Write the landing-page logic — Prompt 3.** Use after an offer direction is chosen. Fill all nine blocks from [the landing-page structure](references/landing-page-structure.md). For every block, state its job, the source input it relies on, the copy, and the CTA or proof needed; do not skip a block silently.
+5. **Create the landing-page draft — Prompt 4.** Use only after Prompt 3’s copy is complete. It creates a responsive, single-file HTML landing page with the blocks in the same order. Keep final copy in the page, make missing assets explicit placeholders, and keep the primary CTA consistent from first screen to final action. It is not a substitute for product or market evidence.
+6. **Audit before traffic — Prompt 5.** Use after a design mock-up or working page exists and the product, audience, and traffic source are known. It separates market evidence, objective UX evidence, and CRO hypotheses.
+7. **Iterate from the audit — Prompt 6.** Use in the same conversation after Prompt 5. Apply only relevant fixes; preserve the selected segment and offer unless the audit supplies a concrete reason to revisit them.
 
 ## Deliverables
 
@@ -33,8 +34,9 @@ For a full workshop, return these compact artifacts:
 - a hypothesis brief: product, market, primary segment, expected behaviour, and assumptions;
 - JTBD segment ranking;
 - three offer options and the selected one;
-- landing-page outline and copy;
-- optional HTML landing page;
+- nine-block landing-page blueprint with the purpose and evidence for each block;
+- final landing-page copy in the same order as the blueprint;
+- responsive single-file HTML landing page when the user asks for a landing page or code;
 - audit table with findings, evidence labels, priority, and required fixes;
 - a test-readiness verdict and the next smallest test.
 

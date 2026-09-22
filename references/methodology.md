@@ -40,7 +40,7 @@ Use the existing workshop context: segment, offer, copy, page, and audit. Make t
 
 ## Landing-page blocks
 
-Adapt the blocks to the product. Omit a block only when it cannot serve the chosen hypothesis.
+Read [the landing-page structure](landing-page-structure.md) before writing copy or code. It carries the complete block-to-job mapping and the copy-to-code handoff. Adapt blocks to the product; when a block has no factual support, mark the gap rather than silently inventing content.
 
 1. One-line essence: why this is relevant now.
 2. Path to the desired outcome: understandable steps.
